@@ -38,7 +38,6 @@ function CompilaPost(){
 }
 
 function Post(props){
-    console.log(props)
     const {
         perfil: [imagemPerfil, altPerfil, nomePerfil],
         post: [imagemPost, altPost],

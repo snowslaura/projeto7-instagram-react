@@ -1,35 +1,51 @@
 export default function ConteudoDireita(){
     return (
         <div class="conteudo-direita">
-            <div class="perfil">
-                <div>
-                    <img src="./img/profile.jpeg" alt="profile.jpeg"/>
-                </div>
-                <div>
-                    <h1>lauracmneves</h1>
-                    <h2>Laura</h2>
-                </div>                               
-            </div>
-            <div class="sugestoes">
-                <div class="para-voce">
-                    <h2>Sugestões para você</h2>
-                </div>
-                <div class="ver-tudo">
-                    <h1>Ver tudo</h1>
-                </div>
-            </div>
+            <PerfilAtual />
             <Perfis />
-            <div class="sobre">
-                <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</p>
-            </div>
-            <div class="versao">
-                <p>© 2021 INSTAGRAM DO FACEBOOK</p>
-            </div>
+            <SobreVersao />
         </div>
 )
 }
 
 
+function PerfilAtual(){
+    const dadosPerfil = ["./img/profile.jpeg","profile.jpeg","lauracmneves","Laura","Sugestões para você", "Ver tudo"]
+    return(
+        <>
+        <div class="perfil">
+            <div>
+                <img src={dadosPerfil[0]} alt={dadosPerfil[1]}/>
+            </div>
+            <div>
+                <h1>{dadosPerfil[2]}</h1>
+                <h2>{dadosPerfil[3]}</h2>
+            </div>                               
+        </div>
+        <div class="sugestoes">
+            <div class="para-voce">
+                <h2>{dadosPerfil[4]}</h2>
+            </div>
+            <div class="ver-tudo">
+                <h1>{dadosPerfil[5]}</h1>
+            </div>
+        </div>
+        </>
+ )
+}
+
+function SobreVersao(){
+    return(
+        <>
+          <div class="sobre">
+                <p>Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos • Localizações • Contas mais relevantes • Hashtags • Idioma</p>
+            </div>
+            <div class="versao">
+                <p>© 2021 INSTAGRAM DO FACEBOOK</p>
+            </div>
+        </>
+    )
+}
 
 const perfilSugestoes = [
     {
@@ -70,13 +86,12 @@ function Perfis(){
 }
 
 function PerfisMenores(props){
-
     const {
         img,
         alt,
         nome,
       } = props
-   
+
     return(
         <div class="perfis-menores">
         <div class="perfis-esquerda">
