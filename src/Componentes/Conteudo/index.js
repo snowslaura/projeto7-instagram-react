@@ -1,4 +1,4 @@
-import ConteudoEsquerda from "./ConteudoEsquerda/ConteudoEsquerda"
+import ConteudoEsquerda from "./ConteudoEsquerda"
 import ConteudoDireita from "./ConteudoDireita"
 
 export default function Conteudo(){

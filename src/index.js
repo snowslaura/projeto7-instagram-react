@@ -1,7 +1,7 @@
 import ReactDom from "react-dom"
-import Topo from "./Topo"
-import BarraMobile from "./BarraMobile"
-import Conteudo from "./Conteudo/Conteudo"
+import Topo from "./Componentes/Topo"
+import BarraMobile from "./Componentes/BarraMobile"
+import Conteudo from "./Componentes/Conteudo"
 
 function App(){
     return(
